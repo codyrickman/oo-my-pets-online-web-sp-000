@@ -27,6 +27,23 @@ class Owner
     new_dog = Dog.new(name)
     @pets[:dogs] << new_dog
   end
+  def walk_dogs
+
+  end
+  def play_with_cats
+  end
+  def feed_fish
+  end
+  def sell_pets
+
+  end
+  def list_pets
+    @pets.each do |type|
+      type.each do |pet|
+        puts "#{pet}"
+      end
+    end
+  end
   def self.all
     @@all
   end
