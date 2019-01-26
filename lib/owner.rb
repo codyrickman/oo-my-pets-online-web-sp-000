@@ -4,10 +4,8 @@ class Owner
   def initialize(name)
     @name = name
     @pets = {fishes: [], cats: [], dogs: []}
-    @@all << self
-  end
-  def species
     @species = "human"
+    @@all << self
   end
   def say_species
     return "I am a #{@species}"
