@@ -10,7 +10,7 @@ class Owner
     @species = "human"
   end
   def say_species
-    @species
+    puts "#{@species}"
   end
   def self.all
     @@all
