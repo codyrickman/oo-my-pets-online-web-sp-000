@@ -59,7 +59,7 @@ class Owner
     dogs = @pets[:dogs].count
     fish = @pets[:fishes].count
     cats = @pets[:cats].count
-    puts "I have #{fish} fish, #{dogs} dog(s), and #{cats} cat(s)."
+    return "I have #{fish} fish, #{dogs} dog(s), and #{cats} cat(s)."
   end
   def self.all
     @@all
