@@ -56,11 +56,10 @@ class Owner
     @pets = []
   end
   def list_pets
-    @pets.each do |type|
-      type.each do |pet|
-        puts "#{pet}"
-      end
-    end
+    dogs = @pets[:dogs].count
+    fish = @pets[:fishes].count
+    cats = @pets[:cats].count
+    puts "I have #{fish} fish, #{dogs} dog(s), and #{cats} cat(s)."
   end
   def self.all
     @@all
