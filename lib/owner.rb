@@ -15,6 +15,10 @@ class Owner
   def name=(name)
     @name = name
   end
+  def buy_fish(name)
+    new_fish = Fish.new(name)
+    @pets.fish << new_fish
+  end
   def self.all
     @@all
   end
